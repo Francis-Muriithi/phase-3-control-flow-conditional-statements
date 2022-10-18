@@ -1,16 +1,17 @@
 def admin_login(username, password)
-  if username == "ADMIN" && password == 12345
-    "Access Granted"
+  if (username == "admin" && password == "12345")
+    "Access granted"
+  elsif username == 'ADMIN' && password == "12345"
+    "Access granted"
   else
-    "Access Denied"
+    "Access denied"
   end
 end
 
 
-
 def hows_the_weather(temperature)
   if (temperature <40)
-    "Its brisk out there"
+    "It's brisk out there!"
   elsif (temperature >= 40 && temperature <= 65)
     "It's a little chilly out there!"
   elsif (temperature > 85)
@@ -45,7 +46,7 @@ def calculator(operation, num1, num2)
   elsif operation == "/"
     num1 / num2
   else
-    "Invalid Operator"
+   puts "Invalid operation!"
   end
 end
 
